@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Burbujas</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Dispara la burbuja</h1>
+        
+
+        <form action="" id="form">
+            <p>Jugador:</p>
+            <div class="inputs">
+                <input class="input" type="text" maxlength="1" required id="letra1">
+                
+                <input class="input" type="text" maxlength="1" required id="letra2">
+                <input class="input" type="text" maxlength="1" required id="letra3">
+            </div>
+            
+            <input type="submit" id="submit" value="Jugar">
+        </form>
+        
+        <div id="showFinishBox" class="dNone showFinishBox">
+            <p>El juego ha acabad con puntuación: <span id="showFinalScore"></span></p>
+            <input type="button" value="Volver a jugar" id="replay">
+            <input type="button" value="Inicio" id="inicio">
+        </div>
+        <canvas class="dNone" id="bubbleCanvas" width="800" height="600"></canvas>
+        <p>Records:</p>
+    
+        <div class="records" id="records">
+          
+        </div>
+    
+    </div>
+    
+
+    <script type="module" src="js/Bubble.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

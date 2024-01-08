@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: Bitsential;
+    src: url("../assets/fonts/Bitsential.otf");
+}
+
+*{
+    font-family: Bitsential;
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("../assets/images/gifs/bubbleGif.gif");
+    background-repeat: repeat-x;
+    background-color: #4d8ec8;
+    background-size: 55%;
+    min-height: 100vh;
+    
+}
+
+canvas {
+    cursor:url("../assets/images/cursor/crosshair.png"), auto;
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    background-color: #4d8ec8;
+}
+
+.input{
+    width: 40px;
+    height: 50px;
+    font-size: 2.8rem;
+    text-align: center;
+
+    background-color: transparent;
+
+    border: none;
+    margin: 20px;
+    box-shadow:   -4px 0 0 0 rgb(39, 195, 50),
+                 4px 0 0 0 rgb(39, 195, 50),
+                 0 -4px 0 0 rgb(39, 195, 50),
+                 0 4px 0 0 rgb(39, 195, 50);
+}
+.input:focus{
+    border: none;
+}
+.input:active{
+    border: none;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.showFinishBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.records{
+    box-shadow:   -4px 0 0 0 rgb(39, 195, 50),
+                 4px 0 0 0 rgb(39, 195, 50),
+                 0 -4px 0 0 rgb(39, 195, 50),
+                 0 4px 0 0 rgb(39, 195, 50);
+                 
+    width: 200px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.record__text{
+    font-size: 2.5rem;
+    /* height: 50px; */
+    margin: 0;
+}
+
+.dNone{
+    display: none;
+}
